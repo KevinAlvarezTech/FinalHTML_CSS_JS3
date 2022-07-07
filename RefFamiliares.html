@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias Familiares</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="opciones">
+        <select name="fondo" id="fondo" onchange="cambiarFondo(this)">
+        <option value="none"></option>
+        <option value="1">Rojo Azul</option>
+        <option value="2">Rojo Verde</option>
+        <option value="3">Naranja Amarillo</option>
+    </select>
+    </div>
+    <div id="body1">
+        <h1>Referencias Familiares</h1>
+    </div>
+    <div class="linea"></div>
+    <div id="body2">
+        <button class="desplegar"><span>Cesar Alvarez Vergara</span></button>
+        <div class="panel">
+            <b>
+                <sub>Docente Universitario</sub>
+            </b>
+            <p>3208594052</p>
+        </div>
+        <div class="linea"></div>
+        <button class="desplegar"><span>Jhon William Alvarez Vergara</span></button>
+        <div class="panel">
+            <b>
+                <sub>Asesor financiero</sub>
+            </b>
+            <p>3005647272</p>
+        </div>
+        <div class="linea"></div>
+        <button class="desplegar"><span>Maruleyda Niño Stapper</span></button>
+        <div class="panel">
+            <b>
+                <sub>Psicóloga</sub>
+            </b>
+            <p>3008232044</p>
+        </div>
+    </div>
+    <div>
+        <br>
+        <button onclick="location.href='index.html'"><span>Información principal</span></button>
+        <button onclick="location.href = 'ExperienciaLaboral.html'"><span>Experiencia Laboral</span></button>
+        <button onclick="location.href='RefPersonales.html'"><span>Referencias personales</span></button>
+        <button onclick="location.href='Estudios.html'"><span>Estudios realizados</span></button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="Js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="opciones">
+        <select name="fondo" id="fondo" onchange="cambiarFondo(this)">
+        <option value="none"></option>
+        <option value="1">Rojo Azul</option>
+        <option value="2">Rojo Verde</option>
+        <option value="3">Naranja Amarillo</option>
+    </select>
+    </div>
+    <div id="body1">
+        <h1>Formación</h1>
+    </div>
+    <div class="linea"></div>
+    <div id="body2">
+        <div>
+            <button class="desplegar"><span>Bachiller académico</span></button>
+            <div class="panel">
+                <sub>Institucion Salazar y Herrera 2014</sub>
+            </div>
+            <div class="linea"></div>
+            <button class="desplegar"><span>Ingeniero electrónico</span></button>
+            <div class="panel">
+                <sub>Universidad Pontificia Bolivariana 2021</sub>
+            </div>    
+        </div>
+    </div>
+    <br>
+    <button onclick="location.href='index.html'"><span>Información principal</span></button>
+    <button onclick="location.href = 'ExperienciaLaboral.html'"><span>Experiencia Laboral</span></button>
+    <button onclick="location.href='RefPersonales.html'"><span>Referencias personales</span></button>
+    <button onclick="location.href='RefFamiliares.html'"><span>Referencias familiares</span></button> 
+
+    <!-- Scripts -->
+    <script src="Js/script.js" defer></script>
+</body>
+</html>

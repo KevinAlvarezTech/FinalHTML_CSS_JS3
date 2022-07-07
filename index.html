@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hoja de vida</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body id = "body">
+    <div class="opciones">
+        <select name="fondo" id="fondo" onchange="cambiarFondo(this)">
+        <option value="none"></option>
+        <option value="1">Rojo Azul</option>
+        <option value="2">Rojo Verde</option>
+        <option value="3">Naranja Amarillo</option>
+    </select>
+    </div>
+    <div id="body1">
+        <div class="name">
+            <h1 class="nombre">Kevin Joseph Alvarez Niño<br>
+            Ingeniero electrónico (UPB)</h1>
+            <div class="image">
+                <img src="Imagenes/FotoDocumento_KevinAlvarez.jpg" alt="FotoDocumento_KevinAlvarez">
+            </div>
+        </div>
+        <div class="linea"></div>
+        <div class="perfil">
+            <h2>Perfil profesional</h2>
+            <p class="descripcion">Ingeniero electrónico de la Universidad Pontificia Bolivariana; en mi formación y experiencia he desarrollado el uso del lenguaje de programación y habilidades para planificar, ejecutar y evaluar adecuadamente programas y proyectos. Como profesional tengo la capacidad para operar y diseñar sistemas electrónicos, lo que me permite proponer soluciones en los procesos, analizando información y detectando oportunamente opciones de mejora.</p>
+        </div>
+    </div>
+    <div class="linea"></div>
+    <div id = "body2">
+        <div class="competencias">
+            <h3>Competencias</h3>
+            <p>-Capacidad de análisis de información técnica</p>
+            <p>-Habilidades de observación y atención al detalle</p>
+            <p>-Habilidades de comunicación</p>
+            <p>-Orientación al logro</p>
+        </div>
+        <div class="linea"></div>
+        <div>
+            <h3>Contacto</h3>
+            <p>3014831896</p>
+            <p>11kevin1997j@gmail.com</p>
+        </div>
+    </div>
+    <div>
+        <button onclick="location.href='Documentos/H.V.KevinAlvarez2022.pdf'" download="Hoja De Vida"><span>Descargar hoja de vida en pdf</span></button> 
+    </div>
+    <br>
+    <button onclick="location.href = 'ExperienciaLaboral.html'"><span>Experiencia Laboral</span></button>
+    <button onclick="location.href='RefPersonales.html'"><span>Referencias personales</span></button>
+    <button onclick="location.href='RefFamiliares.html'"><span>Referencias familiares</span></button>
+    <button onclick="location.href='Estudios.html'"><span>Estudios realizados</span></button>
+    
+    <!-- Scripts -->
+    <script src="Js/script.js" defer></script>
+</body>
+</html>

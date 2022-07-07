@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <button onclick="location.href = 'portafolio.html'"><span>Volver al portafolio</span></button>
+    </div>
+    <div>
+        <p>1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o
+            igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto1
+                    Definir edad Como Entero;
+                    
+                    Escribir "Ingrese su edad en años:";
+                    Leer edad;
+                    
+                    Si edad>=18 Entonces
+                        Escribir "Usted es mayor de edad";
+                    FinSi
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto2_1 {
+                    public static void main(String[] args){
+                        int edad;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su edad:");
+                        edad = entrada.nextInt();
+                        if (edad>=18){
+                            System.out.print("Usted es mayor de edad");
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18
+            años, deberá mostrar en pantalla: Usted aún es un niño(a). </p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto2
+                    Definir edad Como Entero;
+                    
+                    Escribir "Ingrese su edad en años:";
+                    Leer edad;
+                    
+                    Si edad<18 Entonces
+                        Escribir "Usted aún es un niño(a)";
+                    FinSi
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto2_2 {
+                    public static void main(String[] args){
+                        int edad;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su edad en años:");
+                        edad = entrada.nextInt();
+                        if (edad<18){
+                            System.out.print("Usted aún es un niño(a)");
+                        }
+                    }   
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la
+            persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre
+            completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de
+            la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre
+            completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor
+            devuélvase a su casa.</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto3
+                    Definir nombre Como Caracter;
+                    Definir apellidos Como Caracter;
+                    Definir edad Como Entero;
+                    
+                    Escribir "Ingrese su nombre:";
+                    Leer nombre;
+                    
+                    Escribir "Ingrese sus apellidos:";
+                    Leer apellidos;
+                    
+                    Escribir "Ingrese su edad en años:";
+                    Leer edad;
+                    
+                    Si edad>=18 Entonces
+                        Escribir nombre, " ", apellidos, " usted es mayor de edad, por lo tanto puede entrar a la fiesta";
+                    FinSi
+                    
+                    Si edad<18 Entonces
+                        Escribir nombre, " ", apellidos, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa";
+                    FinSi
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto2_3 {
+                    public static void main(String[] args){
+                        String nombre,apellidos;
+                        int edad;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su nombre:");
+                        nombre = entrada.nextLine();
+                        System.out.print("Ingrese sus apellidos:");
+                        apellidos = entrada.nextLine();
+                        System.out.print("Ingrese su edad en años:");
+                        edad = entrada.nextInt();
+                        if (edad>=18){
+                            System.out.print(nombre + " " + apellidos + " usted es mayor de edad, por lo tanto puede entrar a la fiesta");
+                        }
+                        else{
+                            System.out.print(nombre + " " + apellidos + " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa");
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el
+            Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que
+            adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar
+            película, consultar películas disponibles y recibir película en la video tienda con la opción de
+            realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto4
+                    Definir usuario Como Caracter;
+                    Definir entrega,observaciones Como Caracter;
+                    Definir disponibles Como Caracter;
+                    Definir opcion,opcion1 Como Entero;
+                    
+                    disponibles<-"...";
+                    Escribir "Ingrese el nombre del usuario:";
+                    Leer usuario;
+                    
+                    Escribir "Ingrese opción: 1.Películas disponibles 2.Alquilar película 3.Entregar película:";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "Las películas disponibles son:",disponibles;
+                        2:
+                            Escribir "Escriba el nombre de la pelicula que desea alquilar:";
+                            Leer pelicula;
+                        3:
+                            Escribir "Ingrese el nombre de la película que va a entregar y si tiene observaciones sobre la misma:";
+                            Leer entrega;
+                            Escribir "Si requiere hacer observaciones ingrese 1, de lo contrario ingrese 2:";
+                            Leer opcion1;
+                            Segun opcion1 Hacer
+                                1:
+                                    Escribir "Ingrese las observaciones:";
+                                    Leer observaciones;
+                                2:
+                                    observaciones<-"";
+                                De Otro Modo:
+                                    Escribir "La opción no es válida";
+                            FinSegun
+                        De Otro Modo:
+                            Escribir "La opción no es válida";
+                    FinSegun
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto2_4 {
+                    public static void main(String[] args){
+                        int opcion,opcion1;
+                        String usuario,disponibles,entrega,observaciones,pelicula;
+                        disponibles = "...";
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese el nombre del usuario:");
+                        usuario = entrada.nextLine();
+                        System.out.print("Ingrese opción: 1.Películas disponibles 2.Alquilar película 3.Entregar película:");
+                        opcion = entrada.nextInt();
+                        entrada.nextLine();
+                        switch(opcion){
+                            case 1:
+                                System.out.print("Las películas disponibles son:" + disponibles);
+                                break;
+                            case 2:
+                                System.out.print("Escriba el nombre de la pelicula que desea alquilar:");
+                                pelicula = entrada.nextLine();
+                                System.out.print(pelicula);
+                                break;
+                            case 3:
+                                System.out.print("Ingrese el nombre de la película que va a entregar:");
+                                entrega = entrada.nextLine();
+                                System.out.print("Si requiere hacer observaciones ingrese 1, de lo contrario ingrese 2:");
+                                opcion1 = entrada.nextInt(); 
+                                do{
+                                    switch(opcion1){
+                                        case 1:
+                                            entrada.nextLine();
+                                            System.out.print("Ingrese las observaciones:");
+                                            observaciones = entrada.nextLine();
+                                            opcion1 = 2;
+                                            break;         
+                                        case 2:
+                                            break;
+                                        default:
+                                            System.out.println("La opción no es válida");
+                                            break;
+                                    }
+                                }while(opcion1>0 & opcion1<2);
+                                break;
+                            default:
+                            System.out.print("La opción no es válida");     
+                            break;              
+                        }   
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para
+            poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas
+            características que deben indicársele al cliente para que pueda escoger el producto a
+            comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios
+            por producto y devoluciones en caso de que se presenten.</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto5
+                    Definir cliente Como Caracter;
+                    Definir producto,entrega Como Caracter;
+                    Definir precios Como Caracter;
+                    Definir opcion Como Entero;
+                    
+                    precios<-"...";
+                    Escribir "Ingrese el nombre del cliente:";
+                    Leer cliente;
+                    
+                    Escribir "Ingrese la opción: 1.Compra de producto 2.Consulta de precios 3.Devoluciones";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "Qué producto desea comprar?:";
+                            Leer producto;
+                        2:
+                            Escribir "La lista de precios es:",precios;
+                        3:
+                            Escribir "Qué producto desea devolver?:";
+                            Leer entrega;
+                        De Otro Modo:
+                            Escribir "La opción no es válida";
+                    FinSegun
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto2_5 {
+                    public static void main(String[] args){
+                        int opcion;
+                        String cliente,producto,entrega,precios;
+                        precios = "...";
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese el nombre del cliente:");
+                        cliente = entrada.nextLine();
+                        System.out.print("Ingrese la opción 1.Compra de producto 2.Consulta de precios 3.Devoluciones:");
+                        opcion = entrada.nextInt();
+                        entrada.nextLine();
+                        switch(opcion){
+                            case 1:
+                                System.out.print("Qué producto desea comprar?:");
+                                producto = entrada.nextLine();
+                                break;
+                            case 2:
+                                System.out.println("La lista de precios es" + precios);
+                                break;
+                            case 3:
+                                System.out.print("Qué producto desea devolver?:");
+                                entrega = entrada.nextLine();
+                                break;
+                            default:
+                                System.out.print("La opción no es válida");
+                                break;
+                        }
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+        <div>
+            <p>6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las
+                respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a
+                sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones
+                por parte del cliente. También debe existir registro de salida del taller con las novedades y otra
+                de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en
+                la motocicleta al entregarla.</p>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    Proceso Punto6
+                        Definir moto Como Caracter;
+                        Definir ingreso Como Caracter;
+                        Definir salida,observaciones,observacionesi Como Caracter;
+                        Definir arreglos Como Caracter;
+                        Definir opcion,opcion1 Como Entero;
+                        
+                        Escribir "Ingrese la referencia de su motocicleta:";
+                        Leer moto;
+                        
+                        Escribir "Ingrese la opcion: 1.Ingreso 2.Arreglos 3.Salida";
+                        Leer opcion;
+                        
+                        Segun opcion Hacer	
+                            1:
+                                Escribir "Escriba la fecha de ingreso de la motocicleta y las observaciones que tenga el cliente sobre la misma:";
+                                Leer ingreso;
+                                Escribir "Ingrese las observaciones:";
+                                Leer observacionesi;
+                            2:
+                                Escribir "Describa los arreglos realizados por el mecánico a la motocicleta en caso de que se requiera inventariar cambios repuestos:";
+                                Leer arreglos;
+                            3:
+                                Escribir "Ingrese la fecha de salida y las observaciones con las novedades de la motocicleta:";
+                                Leer salida;
+                                Escribir "Si requiere hacer observaciones ingrese 1, de lo contrario ingrese 2:";
+                                Leer opcion1;
+                                Segun opcion1 Hacer
+                                    1:
+                                        Escribir "Ingrese las observaciones:";
+                                        Leer observaciones;
+                                    2:
+                                        observaciones<-"";
+                                    De Otro Modo:
+                                        Escribir "La opción no es válida";
+                                FinSegun
+                            De Otro Modo:
+                                Escribir "La opción no es válida";
+                        FinSegun
+                        
+                    FinProceso
+                </code>
+            </pre>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    import java.util.Scanner;
+
+                    public class Punto2_6 {
+                        public static void main(String[] args){
+                            int opcion,opcion1;
+                            String moto,ingreso,salida,observaciones,observacionesi,arreglos;
+                            Scanner entrada = new Scanner(System.in);
+                            System.out.print("Ingrese la referencia de su motocicleta:");
+                            moto = entrada.nextLine();
+                            System.out.print("Ingrese la opcion: 1.Ingreso 2.Arreglos 3.Salida:");
+                            opcion = entrada.nextInt();
+                            entrada.nextLine();
+                            switch(opcion){
+                                case 1:
+                                    System.out.print("Escriba la fecha de ingreso de la motocicleta:");
+                                    ingreso = entrada.nextLine();
+                                    System.out.print("Ingrese las observaciones:");
+                                    observacionesi = entrada.nextLine();
+                                    break;
+                                case 2:
+                                    System.out.print("Describa los arreglos realizados por el mecánico a la motocicleta en caso de que se requiera inventariar cambios repuestos:");
+                                    arreglos = entrada.nextLine();
+                                    break;
+                                case 3:
+                                    System.out.print("Ingrese la fecha de salida de la motocicleta:");
+                                    salida = entrada.nextLine();
+                                    System.out.print("Si requiere hacer observaciones ingrese 1, de lo contrario ingrese 2:");
+                                    opcion1 = entrada.nextInt(); 
+                                    do{
+                                        switch(opcion1){
+                                            case 1:
+                                                entrada.nextLine();
+                                                System.out.print("Ingrese las observaciones:");
+                                                observaciones = entrada.nextLine();
+                                                opcion1 = 2;
+                                                break;         
+                                            case 2:
+                                                break;
+                                            default:
+                                                System.out.println("La opción no es válida");
+                                                break;
+                                        }
+                                    }while(opcion1>0 & opcion1<2);
+                                    break;
+                                default:
+                                System.out.print("La opción no es válida");     
+                                break;              
+                            }   
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC
+                (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para
+                cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para
+                cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</p>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    Proceso Punto7
+                        Definir nombre Como Caracter;
+                        Definir IMC Como Real;
+                        Definir peso Como Real;
+                        Definir estatura Como Real;	
+                        Escribir "Ingrese su nombre:";
+                        Leer nombre;	
+                        Escribir "Ingrese su peso en kilogramos:";
+                        Leer peso;	
+                        Escribir "Ingrese estatura en metros:";
+                        Leer estatura;	
+                        IMC<-peso/(estatura*estatura);	
+                        Si IMC<18.5 Entonces
+                            Escribir "Usted tiene bajo peso";
+                        FinSi
+                        
+                        Si IMC>=18.5 y IMC<=24.9 Entonces
+                            Escribir "Usted tiene peso normal";
+                        FinSi
+                        
+                        Si IMC>=25 y IMC<=29.9 Entonces
+                            Escribir "Usted tiene sobrepeso";
+                        FinSi
+                        
+                        Si IMC>=30 Entonces
+                            Escribir "Usted es obeso";
+                        FinSi
+                    FinProceso
+                </code>
+            </pre>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    import java.util.Scanner;
+                    import java.util.Locale;
+
+                    public class Punto2_7 {
+                        public static void main(String[] args){
+                            float IMC,peso,estatura;
+                            String nombre;
+                            Scanner entrada = new Scanner(System.in);
+                            entrada.useLocale(Locale.US);
+                            System.out.print("Ingrese su nombre:");
+                            nombre = entrada.nextLine();
+                            System.out.print("Ingrese su peso en kilogramos:");
+                            peso = entrada.nextFloat();
+                            System.out.print("Ingrese estatura en metros:");
+                            estatura = entrada.nextFloat();
+                            IMC = peso/(estatura*estatura);
+                            if (IMC<18.5){
+                                System.out.print("Usted tiene bajo peso");
+                            }
+                            if (IMC>=18.5 & IMC<=24.9){
+                                System.out.print("Usted tiene peso normal");
+                            }
+                            if (IMC>=25 & IMC<=29.9){
+                                System.out.print("Usted tiene sobrepeso");
+                            }
+                            if (IMC>=30){
+                                System.out.print("Usted es obeso");
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le
+                permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene
+                unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que
+                la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren
+                diariamente.</p>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    Proceso Punto8
+                        Definir nombre,sabor,decoraciones,tortas,ventas Como Caracter;
+                        Definir porciones,opcion Como Entero;
+                        
+                        tortas<-"...";
+                        Escribir "Ingrese el nombre del cliente:";
+                        Leer nombre;
+                        Escribir "Ingrese la opción: 1.Pedido 2.Tortas disponibles 3.Ventas diarias";
+                        Leer opcion;
+                        
+                        Segun opcion Hacer	
+                            1:
+                                Escribir "Ingrese el sabor de la torta:";
+                                Leer sabor;
+                                Escribir "Ingrese la cantidad de porciones:";
+                                Leer porciones;
+                                Escribir "Ingrese la decoración que quiere:";
+                                Leer decoraciones;
+                            2:
+                                Escribir "Las tortas disponibles son:",tortas;
+                            3:
+                                Escribir "Ingrese las ventas registradas del día:";
+                                Leer ventas;
+                            De Otro Modo:
+                                Escribir "La opción no es válida";
+                        FinSegun
+                    FinProceso
+                </code>
+            </pre>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    import java.util.Scanner;
+
+                    public class Punto2_8 {
+                        public static void main(String[] args){
+                            int opcion;
+                            String nombre,sabor,decoraciones,tortas,ventas,porciones;
+                            tortas = "...";
+                            Scanner entrada = new Scanner(System.in);
+                            System.out.print("Ingrese el nombre del cliente:");
+                            nombre = entrada.nextLine();
+                            System.out.print("Ingrese la opción 1.Pedido 2.Tortas disponibles 3.Ventas diarias:");
+                            opcion = entrada.nextInt();
+                            entrada.nextLine();
+                            switch(opcion){
+                                case 1:
+                                    System.out.print("Ingrese el sabor de la torta:");
+                                    sabor = entrada.nextLine();
+                                    System.out.print("Ingrese la cantidad de porciones:");
+                                    porciones = entrada.nextLine();
+                                    System.out.print("Ingrese la decoración que quiere:");
+                                    decoraciones = entrada.nextLine();
+                                    break;
+                                case 2:
+                                    System.out.print("Las tortas disponibles son:"+tortas);
+                                    break;
+                                case 3:
+                                    System.out.print("Ingrese las ventas registradas del día:");
+                                    ventas = entrada.nextLine();
+                                    break;
+                                default:
+                                    System.out.print("La opción no es válida");
+                                    break;
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>9. El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de
+                diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio
+                solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si
+                desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos
+                necesarios para realizar cada cálculo y mostrar su respectivo resultado.</p>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    Proceso Punto9
+                        Definir base, altura, baseM, area Como Real;
+                        Definir opcion Como Entero;
+                        
+                        Escribir "Ingrese opcion: 1.Area rectangulo 2.Area triangulo 3.Area trapecio";
+                        Leer opcion;
+
+                        Segun opcion Hacer
+                            1:
+                                Escribir "Ingrese la base del rectangulo:";
+                                Leer base;
+                                Escribir "Ingrese la altura del rectangulo:";
+                                Leer altura;
+                                area<-base*altura;
+                                Escribir "El area del rectangulo es:",area;
+                            2:	
+                                Escribir "Ingrese la base del triangulo:";
+                                Leer base;
+                                Escribir "Ingrese la altura del triangulo:";
+                                Leer altura;
+                                area<-(base*altura)/2;
+                                Escribir "El area del triangulo es:",area;
+                            3:	
+                                Escribir "Ingrese la base mayor del trapecio:";
+                                Leer baseM;
+                                Escribir "Ingrese la base menos del trapecio:";
+                                Leer base;
+                                Escribir "Ingrese la altura del trapecio:";
+                                Leer altura;
+                                area<-((base+baseM)/2)*altura;
+                                Escribir "El area del trapecio es:",area;
+                            De Otro Modo:
+                                Escribir "La opción no es válida";
+                        FinSegun
+                    FinProceso
+
+                </code>
+            </pre>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    import java.util.Scanner;
+                    import java.util.Locale;
+
+                    public class Punto2_9 {
+                        public static void main(String[] args){
+                            int opcion;
+                            float base, altura, baseM, area;
+                            Scanner entrada = new Scanner(System.in);
+                            entrada.useLocale(Locale.US);
+                            System.out.print("Ingrese opcion 1.Area rectangulo 2.Area triangulo 3.Area trapecio: ");
+                            opcion = entrada.nextInt();
+                            switch(opcion){
+                                case 1:
+                                    System.out.print("Ingrese la base del rectangulo: ");
+                                    base = entrada.nextFloat();
+                                    System.out.print("Ingrese la altura del rectangulo:");
+                                    altura = entrada.nextFloat();
+                                    area = base*altura;
+                                    System.out.print("El area del rectangulo es:"+area);
+                                    break;
+                                case 2:
+                                    System.out.print("Ingrese la base del triangulo: ");
+                                    base = entrada.nextFloat();
+                                    System.out.print("Ingrese la altura del triangulo: ");
+                                    altura = entrada.nextFloat();
+                                    area = (base*altura)/2;
+                                    System.out.print("El area del triángulo es:"+area);
+                                    break;
+                                case 3:
+                                    System.out.print("Ingrese la base mayor del trapecio: ");
+                                    baseM = entrada.nextFloat();
+                                    System.out.print("Ingrese la base menor del trapecio: ");
+                                    base = entrada.nextFloat();
+                                    System.out.print("Ingrese la altura del trapecio: ");
+                                    altura = entrada.nextFloat();
+                                    area = ((base+baseM)/2)*altura;
+                                    System.out.print("El area del trapecio es:"+area);
+                                    break;
+                                default:
+                                    System.out.print("La opción no es válida");
+                                    break;
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+            <p>10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una
+                aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga
+                los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros
+                o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el
+                valor no puede ser mayor al valor que tiene en la cuenta.</p>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    Proceso Punto10
+                        Definir titular Como Caracter;
+                        Definir cantidad, ingreso, retiros, consultas Como Real;
+                        Definir opcion Como Entero;
+                        
+                        titular<-"Kevin Joseph Alvarez Niño";
+                        cantidad<-354000.37;
+                        Escribir titular, " ", cantidad;
+                        
+                        Escribir "Ingrese opción: 1.Ingresar dinero 2.Retirar dinero 3.Consultar saldo";
+                        Leer opcion;
+                        
+                        Segun opcion Hacer
+                            1: 
+                                Escribir "Valor que va a ingresar:";
+                                Leer ingreso;
+                                cantidad<-cantidad+ingreso;
+                            2:
+                                Escribir "Valor que va a retirar:";
+                                Leer retiros;
+                                Si retiros<cantidad Entonces
+                                    cantidad<-cantidad-retiros;
+                                SiNo
+                                    Escribir "Valor de retiro inválido";
+                                FinSi
+                            3:
+                                Escribir "Su saldo es ",cantidad;	
+                            De Otro Modo:
+                                Escribir "La opción no es válida";
+                        FinSegun
+                    FinProceso
+                </code>
+            </pre>
+        </div>
+        <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+        <div class="panel">
+            <pre>
+                <code>
+                    import java.util.Scanner;
+                    import java.util.Locale;
+
+                    public class Punto2_10 {
+                        public static void main(String[] args){
+                            int opcion;
+                            String titular;
+                            double cantidad, ingreso, retiros;
+                            titular = "Kevin Joseph Alvarez Niño";
+                            cantidad = 354000.37;
+                            Scanner entrada = new Scanner(System.in);
+                            entrada.useLocale(Locale.US);
+                            System.out.println(titular + " " + cantidad);
+                            System.out.print("Ingrese opción 1.Ingresar dinero 2.Retirar dinero 3.Consultar saldo: ");
+                            opcion = entrada.nextInt();
+                            entrada.nextLine();
+                            switch(opcion){
+                                case 1:
+                                    System.out.print("Valor que va a ingresar:");
+                                    ingreso = entrada.nextDouble();
+                                    cantidad = cantidad + ingreso;
+                                    System.out.print(cantidad);
+                                    break;
+                                case 2:
+                                    System.out.print("Valor que va a retirar: ");
+                                    retiros = entrada.nextDouble();
+                                    if (retiros<cantidad){
+                                        cantidad = cantidad - retiros;
+                                        System.out.print(cantidad);
+                                    }else{
+                                        System.out.print("Valor de retiro inválido");
+                                    }
+                                    break;
+                                case 3:
+                                    System.out.print("Su saldo es "+cantidad);
+                                    break;
+                                default:
+                                    System.out.print("La opción no es válida");
+                                    break;
+                            }
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <div>
+    <div>
+        <br>
+        <button onclick="location.href = 'variables.html'"><span>Variables e impresión</span></button>
+        <button onclick="location.href = 'ciclos.html'"><span>Ciclos</span></button>
+        <button onclick="location.href = 'arreglos.html'"><span>Arreglos</span></button>
+        <button onclick="location.href = 'funciones.html'"><span>Funciones</span></button>
+    </div>
+    
+
+     <!-- Scripts -->
+     <script src="Js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia laboral</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <div class="opciones">
+        <select name="fondo" id="fondo" onchange="cambiarFondo(this)">
+        <option value="none"></option>
+        <option value="1">Rojo Azul</option>
+        <option value="2">Rojo Verde</option>
+        <option value="3">Naranja Amarillo</option>
+    </select>
+    </div>
+    <div id="body1">
+        <div>
+            <h1>Experiencia laboral</h1>
+        </div>
+    </div>
+    <div class="linea"></div>
+    <div id="body2">
+        <button class="desplegar" onclick="acordeon()"><span>Mubi Medical</span></button>
+        <div class="panel">
+            <b>
+                <sub>Marzo - Septiembre  2021</sub>
+            </b>
+            <p>-Diseño de circuitos y PCB</p>
+            <p>-Generación de documentos de fabricación</p>
+            <p>-Ensamble de prototipos</p>
+            <p>-Reparación de los sistemas de control con problemas</p>
+            <p>-Realimentación de problemas</p>
+            <p>-Programación(C#,Python,Html,CSS)</p>
+        </div>
+     
+        <div class="linea"></div>
+        <div>
+            <button class="desplegar"><span>Mesero Dogger</span></button>
+            <div class="panel">
+                <b>
+                    <sub>Mayo 2016 - Marzo 2017</sub>
+                    <sub>| Trabajo informal</sub>
+                </b>
+                <p>-Venta de productos y atención a clientes en las mesas</p>
+            </div>
+        </div>
+        <div class="linea"></div>
+        <div>
+            <button class="desplegar"><span>Auxiliar de producto (Laborales Medellin S.A)</span></button>
+            <div class="panel">
+                <b>
+                    <sub>Diciembre 2015</sub>
+                </b>
+                <p>-Organización de mercancía en la bodega del almacén</p>
+            </div>
+        </div>
+        <div class="linea"></div>
+        <div>
+            <button class="desplegar"><span>Domiciliario</span></button>
+            <div class="panel">
+                <b>
+                    <sub>Agosto 2019 - Julio 2022</sub>
+                    <sub>| Trabajo informal</sub>
+                </b>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button onclick="location.href='index.html'"><span>Información principal</span></button>
+    <button onclick="location.href='RefPersonales.html'"><span>Referencias personales</span></button>
+    <button onclick="location.href='RefFamiliares.html'"><span>Referencias familiares</span></button> 
+    <button onclick="location.href='Estudios.html'"><span>Estudios realizados</span></button>
+
+    <!-- Scripts -->
+    <script src="Js/script.js" defer></script>
+</body>
+</html>

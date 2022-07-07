@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <button onclick="location.href = 'portafolio.html'"><span>Volver al portafolio</span></button>
+    </div>
+    <div>
+        <p>1. Realizar un programa el cual solicite su nombre y apellidos.</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto1
+                    Definir nombre Como Caracter;
+                    Definir apellidos Como Caracter;
+                    
+                    Escribir "Ingrese su nombre:";
+                    Leer nombre;
+                    
+                    Escribir "Ingrese sus apellidos:";
+                    Leer apellidos;
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+                public class Punto1_1 {
+                    public static void main(String[] args){
+                        String nombre,apellidos;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su nombre:");
+                        nombre = entrada.nextLine();
+                        System.out.print("Ingrese sus apellidos:");
+                        apellidos = entrada.nextLine();
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>2. Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto2
+                    Definir nombre Como Caracter;
+                    Definir apellidos Como Caracter;
+                    Definir edad Como Entero;
+                    Definir estatura Como Real;
+                    
+                    Escribir "Ingrese su nombre:";
+                    Leer nombre;
+                    
+                    Escribir "Ingrese sus apellidos:";
+                    Leer apellidos;
+                    
+                    Escribir "Ingrese su edad en años:";
+                    Leer edad;
+                    
+                    Escribir "Ingrese su estatura en metros:";
+                    Leer estatura;
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+                public class Punto1_2 {
+                    public static void main(String[] args) {
+                        String nombre,apellidos,edad,estatura;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su nombre:");
+                        nombre = entrada.nextLine();
+                        System.out.print("Ingrese sus apellidos:");
+                        apellidos = entrada.nextLine();
+                        System.out.print("Ingrese su edad en años:");
+                        edad = entrada.nextLine();
+                        System.out.print("Ingrese su estatura en metros:");
+                        estatura = entrada.nextLine();
+                    }
+                    
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>3. Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y
+            apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo
+            [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre]. </p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto3
+                    Definir nombre Como Caracter;
+                    Definir apellidos Como Caracter;
+                    Definir nombrePadre Como Caracter;
+                    Definir apellidosPadre Como Caracter;
+                    Definir nombreMadre Como Caracter;
+                    Definir apellidosMadre Como Caracter;
+                    
+                    Escribir "Ingrese su nombre:";
+                    Leer nombre;	
+                    Escribir "Ingrese sus apellidos:";
+                    Leer apellidos;
+                    Escribir "Ingrese el nombre de su padre:";
+                    Leer nombrePadre;
+                    Escribir "Ingrese los apellidos de su padre:";
+                    Leer apellidosPadre;
+                    Escribir "Ingrese el nombre de su madre:";
+                    Leer nombreMadre;
+                    Escribir "Ingrese los apellidos de su madre:";
+                    Leer apellidosMadre;
+                    
+                    Limpiar Pantalla;
+                    
+                    Escribir "Yo " ,nombre ," ", apellidos, ", soy hijo de " ,nombreMadre, " y " ,nombrePadre;
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto1_3 {
+                    public static void main(String[] args) {
+                        String nombre,apellidos,nombrePadre,apellidosPadre,nombreMadre,apellidosMadre;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese su nombre:");
+                        nombre = entrada.nextLine();
+                        System.out.print("Ingrese sus apellidos:");
+                        apellidos = entrada.nextLine();
+                        System.out.print("Ingrese el nombre de su padre:");
+                        nombrePadre = entrada.nextLine();
+                        System.out.print("Ingrese los apellidos de su padre:");
+                        apellidosPadre = entrada.nextLine();
+                        System.out.print("Ingrese el nombre de su madre:");
+                        nombreMadre = entrada.nextLine();
+                        System.out.print("Ingrese los apellidos de su madre:");
+                        apellidosMadre = entrada.nextLine();
+                        System.out.print("Yo " + nombre + " " + apellidos + ", soy hijo de " + nombreMadre + " y " + nombrePadre);
+                    }
+                } 
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>4. Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe
+            imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del
+            país [Nombre del País]</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto4
+                    Definir ciudadCapital Como Caracter;
+                    Definir pais Como Caracter;
+                    
+                    Escribir "Ingrese una ciudad capital:";
+                    Leer ciudadCapital;
+                    
+                    Escribir "Ingrese el país del que es capital:";
+                    Leer pais;
+                    
+                    Limpiar Pantalla;
+                    
+                    Escribir "La ciudad ", ciudadCapital, ", es la capital del país ", pais;
+                FinProceso
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto1_4 {
+                    public static void main(String[] args){
+                        String ciudadCapital,pais;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese una ciudad capital:");
+                        ciudadCapital = entrada.nextLine();
+                        System.out.print("Ingrese el país del que es capital:");
+                        pais = entrada.nextLine();   
+                        System.out.print("La ciudad " + ciudadCapital + ", es la capital del país " + pais);
+                    }  
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <p>5. Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de
+            mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente
+            mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota]
+            años de edad y [Nombre Completo] es actualmente su dueño(a).</p>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>PSeInt</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                Proceso Punto5
+                    Definir nombreMascota Como Caracter;
+                    Definir edadMascota Como Entero;
+                    Definir nombreCompleto Como Caracter;
+                    Definir tipoMascota Como Caracter;
+                    
+                    Escribir "Ingrese el nombre de su mascota:";
+                    Leer nombreMascota;	
+                    Escribir "Ingrese la edad de su mascota en años:";
+                    Leer edadMascota;
+                    Escribir "Ingrese el tipo de mascota:";
+                    Leer tipoMascota;
+                    Escribir "Ingrese su nombre completo:";
+                    Leer nombreCompleto;
+                    
+                    Limpiar Pantalla;
+                    
+                    Escribir nombreMascota ," es un(a) ", tipoMascota, ", el cual, tiene " ,edadMascota, " años de edad y " ,nombreCompleto, " es actualmente su dueño(a) ";
+                FinProceso
+
+            </code>
+        </pre>
+    </div>
+    <button class="desplegar" onclick="acordeon()"><span>JAVA</span></button>
+    <div class="panel">
+        <pre>
+            <code>
+                import java.util.Scanner;
+
+                public class Punto1_5 {
+                    public static void main(String[] args){
+                        String nombreMascota, edadMAscota,tipoMascota,nombreCompleto;
+                        Scanner entrada = new Scanner(System.in);
+                        System.out.print("Ingrese el nombre de su mascota:");
+                        nombreMascota = entrada.nextLine();
+                        System.out.print("Ingrese la edad de su mascota en años:");
+                        edadMAscota = entrada.nextLine();
+                        System.out.print("Ingrese el tipo de mascota:");
+                        tipoMascota = entrada.nextLine();
+                        System.out.print("Ingrese su nombre completo:");
+                        nombreCompleto = entrada.nextLine();
+                        System.out.print(nombreMascota + " es un(a) " + tipoMascota + ", el cual, tiene " + edadMAscota + " años de edad y " + nombreCompleto + " es actualmente su dueño(a)");        
+                    }
+                }
+            </code>
+        </pre>
+    </div>
+    <div>
+        <button onclick="location.href = 'variables.html'"><span>Variables e impresión</span></button>
+        <button onclick="location.href = 'condicionales.html'"><span>Condicionales</span></button>
+        <button onclick="location.href = 'ciclos.html'"><span>Ciclos</span></button>
+        <button onclick="location.href = 'funciones.html'"><span>Funciones</span></button>
+    </div>
+
+     <!-- Scripts -->
+     <script src="Js/script.js" defer></script>
+</body>
+</html>
